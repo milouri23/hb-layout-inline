@@ -1,3 +1,77 @@
-h1 {
-    color: rgb(101, 167, 104)
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-fixed-header {
+    max-width: 1024px;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    text-align: center;
+    color: #093b18;
+    background-color: #d8d8d8;
+}
+
+.main-container {
+    max-width: 1024px;
+    margin: 100px auto 0;
+}
+
+.page-row {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 0;
+}
+
+.big-section {
+    width: calc(50% - 10px);
+    height: 300px;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #d8d8d8;    
+}
+
+.small-section {
+    width: calc(100% / 3 - 40px / 3);
+    height: 120px;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #d8d8d8;
+}
+
+.big-section:last-child, .small-section:last-child {
+    margin-right: 0;
+}
+
+.special-footer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: #d8d8d8;
+    text-align: center;
+}
+
+.pretty-figure {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4e3c50
+}
+
+@media (max-width: 500px) {
+    .big-section, .small-section {
+        width: 100%;
+        margin: 0 0 20px;
+    }
 }
