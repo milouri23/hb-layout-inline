@@ -54,15 +54,12 @@
     height: 200px;
     position: relative;
     background-color: #d8d8d8;
-    text-align: center;
 }
 
 .pretty-figure {
     width: 150px;
     height: 150px;
-    display: inline-block;
     position: absolute;
-    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
